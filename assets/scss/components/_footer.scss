@@ -1,0 +1,15 @@
+.footer{
+    height: 90px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: $font-regular;
+    box-shadow:0px 0px 1.5px $border-color;
+    p{
+        padding-bottom: 15px;
+    }
+    a{
+        color: $first-color;
+        padding: 15px 8px;
+    }
+}

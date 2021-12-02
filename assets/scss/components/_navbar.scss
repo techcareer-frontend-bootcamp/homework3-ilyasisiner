@@ -1,0 +1,84 @@
+/* Navbar - Menu */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    height: $header-height; 
+    padding: 10px 20px 15px 20px;
+    box-shadow:0px 0px 1.5px $border-color;
+    background-color: $body-color;
+}
+.nav{
+    display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+
+    grid-template-rows: $header-height;
+    
+
+    
+    &_logo{
+       color: $first-color;
+       font-weight: $font-bold;
+    }
+   
+    &_toggle{
+        display: flex;
+        justify-content: end;
+        padding-right: 10px;
+        font-size: 24px; 
+    }
+    &_list{
+        color: $first-color;
+        font-weight: $font-bold;
+       
+    }
+    &_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $first-color;
+        border-radius: 50px;
+        text-align: center;
+        width: 90px;
+        height: 30px;
+        padding-bottom: 5px;
+        padding-top: 3px;
+       a{
+           color: $white-color;     
+       }
+   }
+   &_menu{
+       display:none;
+       
+       a{
+           color: $first-color;
+           font-weight: $font-regular;
+       }
+       li{
+           padding-top: 15px;
+           padding-bottom: 15px;
+       }
+        
+   }
+    
+}
+.show{
+   grid-column-start: span 3;
+   grid-template-columns: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   align-content: space-around;
+   background-color: $white-color;
+   text-align: center;
+   width:100% ;
+   height: 115px;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   z-index: 1;
+   box-shadow:0px 0px 1.5px $border-color;
+}
+
